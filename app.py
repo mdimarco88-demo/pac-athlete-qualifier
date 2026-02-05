@@ -6,7 +6,17 @@ from matcher import match_lead
 st.set_page_config(page_title="PAC Athlete Lead Qualifier (Prototype)", layout="wide")
 
 st.title("PAC Athlete Lead Qualifier (Prototype)")
-st.caption("Paste a lead name and get a confidence-scored match + proof link. (Prototype scope: NFL/NBA/MLB/MLS)")
+(st.markdown("""
+### How to use this tool
+1. **Type a lead's name** (e.g., “Patrick Mahomes”).
+2. *(Optional)* Add **DOB** and/or choose a **League hint** to reduce false matches.
+3. Click **Match lead** to get:
+   - a **confidence score**
+   - the best matching athlete record(s)
+   - a **Wikidata proof link** (source of truth)
+
+**NOTE:** This prototype is only populated with 100 current + former top athletes from each league along with 800 additional random current and former athletes from each league - capped for processing power in the demo environment. Please refer to the provided list of players to test the system and I reccomend trying some false or nonsense names to see how the scoring system works!
+"""))
 
 @st.cache_data(show_spinner=False)
 def load_registry(path: str) -> pd.DataFrame:
