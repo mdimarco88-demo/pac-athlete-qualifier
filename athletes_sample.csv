@@ -1,0 +1,9 @@
+qid,name,dob,league,sport,league_id,league_id_property,proof_wikidata_url,level,source
+,Patrick Mahomes,1995-09-17,NFL,American football,mahompa01,P3561,,major,sample
+,Tom Brady,1977-08-03,NFL,American football,BradTo00,P3561,,major,sample
+,LeBron James,1984-12-30,NBA,Basketball,2544,P3647,,major,sample
+,Stephen Curry,1988-03-14,NBA,Basketball,201939,P3647,,major,sample
+,Mike Trout,1991-08-07,MLB,Baseball,545361,P3541,,major,sample
+,Shohei Ohtani,1994-07-05,MLB,Baseball,660271,P3541,,major,sample
+,Lionel Messi,1987-06-24,MLS,Soccer,messi,P2398,,major,sample
+,Lorenzo Insigne,1991-06-04,MLS,Soccer,lorenzo-insigne,P2398,,major,sample
