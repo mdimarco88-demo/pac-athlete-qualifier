@@ -17,11 +17,11 @@ col1, col2, col3 = st.columns([2, 1, 1])
 with col1:
     lead_name = st.text_input("Lead name", placeholder="e.g., LeBron James")
 with col2:
-    lead_dob = st.text_input("DOB (optional, ISO)", placeholder="YYYY-MM-DD")
+    lead_dob = st.text_input("DOB (optional, ISO)", placeholder="MM/DD/YYYY")
 with col3:
     league_hint = st.selectbox("League hint (optional)", ["", "NFL", "NBA", "MLB", "MLS"])
 
-registry_path = st.text_input("Registry CSV path", value="data/athletes_sample.csv")
+registry_path = st.text_input("Registry CSV path", value="athletes list.csv")
 
 if st.button("Match lead", type="primary"):
     try:
