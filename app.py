@@ -21,7 +21,7 @@ with col2:
 with col3:
     league_hint = st.selectbox("League hint (optional)", ["", "NFL", "NBA", "MLB", "MLS"])
 
-registry_path = st.text_input("Registry CSV path", value="athletes list.csv")
+registry_path = st.text_input("Registry CSV path", value="athlete list.csv")
 
 if st.button("Match lead", type="primary"):
     try:
